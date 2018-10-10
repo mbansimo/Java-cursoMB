@@ -5,7 +5,7 @@ import mx.com.gm.sga.domain.Persona;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PersonaServiceImpl implements PersonaServiceRemote {
+public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService {
 
     @Override
     public List<Persona> listarPersonas() {
@@ -17,12 +17,12 @@ public class PersonaServiceImpl implements PersonaServiceRemote {
     }
 
     @Override
-    public Persona encontraPersonaPorId (Persona persona) {
+    public Persona encontrarPersonaPorId (Persona persona) {
         return null;
     }
 
     @Override
-    public Persona encontraPersonaPorEmail(Persona persona) {
+    public Persona encontrarPersonaPorEmail(Persona persona) {
         return null;
     }
 
